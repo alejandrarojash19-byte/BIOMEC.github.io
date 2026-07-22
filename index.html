@@ -1,3 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interactive 3D Skull</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script type="module"
+src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+</script>
+
+</head>
+
+<body>
+
+<div class="title">
+
+Interactive 3D Skull Reconstruction
+
+</div>
+
+<model-viewer
+
+id="viewer"
+
+src="skull.glb"
+
+camera-controls
+
+touch-action="pan-y"
+
+auto-rotate
+
+rotation-per-second="8deg"
+
+environment-image="neutral"
+
+shadow-intensity="1"
+
+exposure="1.25"
+
+camera-orbit="30deg 75deg auto"
+
+field-of-view="30deg"
+
+loading="eager"
+
+>
+
+</model-viewer>
+
+<div class="toolbar">
+
+<button id="reset">
+
+Reset View
+
 </button>
 
 <button id="rotate">
